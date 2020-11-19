@@ -1,15 +1,8 @@
 {
-  "name": "vote-api",
+  "name": "u-develop-it",
   "version": "1.0.0",
-  "description": "Back-end APIs for a voting app.",
+  "description": "To create the database, run `sqlite3 votes.db < db/schema.sql`.",
   "main": "server.js",
-  "dependencies": {
-    "express": "^4.17.1",
-    "sqlite3": "^4.1.1"
-  },
-  "devDependencies": {
-    "jest": "^25.1.0"
-  },
   "scripts": {
     "test": "jest",
     "start": "node server.js",
@@ -17,7 +10,22 @@
     "seed": "sqlite3 db/election.db < db/seeds.sql",
     "db": "sqlite3 db/election.db"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Johnny-smiles/u-develop-it.git"
+  },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Johnny-smiles/u-develop-it/issues"
+  },
+  "homepage": "https://github.com/Johnny-smiles/u-develop-it#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
 }
